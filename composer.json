@@ -36,7 +36,7 @@
             "Waavi\\Translation\\Test\\": "tests"
         }
     },
-    "minimum-stability": "dev",
+
     "extra": {
         "laravel": {
             "providers": [
