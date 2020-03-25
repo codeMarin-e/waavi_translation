@@ -36,7 +36,6 @@
             "Waavi\\Translation\\Test\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "scripts": {
         "test": "vendor/bin/phpunit"
     }
