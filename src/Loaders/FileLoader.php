@@ -47,8 +47,8 @@ class FileLoader extends Loader
 
         $undot = [];
         foreach ($dotArray as $item => $text) {
-            Arr::set($undot, $item, $text);
-        }
+                    Arr::set($undot, $item, $text);
+                }
         return $undot;
     }
 

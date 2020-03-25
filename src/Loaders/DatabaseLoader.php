@@ -41,7 +41,6 @@ class DatabaseLoader extends Loader
     {
         $dotArray = $this->translationRepository->loadSource($locale, $namespace, $group);
         return Arr::dot($dotArray);
-
         $undot    = [];
         foreach ($dotArray as $item => $text) {
             Arr::set($undot, $item, $text);

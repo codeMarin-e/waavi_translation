@@ -1,4 +1,5 @@
-<?php namespace Waavi\Translation\Loaders;
+<?php
+    namespace Waavi\Translation\Loaders;
 
 use Illuminate\Support\Arr;
 
@@ -55,6 +56,11 @@ class MixedLoader extends Loader
             Arr::set($return, $key, $value);
         }
         return $return;
+
+//        return array_replace_recursive(
+//            $this->secondaryLoader->loadSource($locale, $group, $namespace),
+//            $this->primaryLoader->loadSource($locale, $group, $namespace)
+//        );
     }
 
     /**

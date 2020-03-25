@@ -1,6 +1,6 @@
 {
-    "name": "marinar/waavi_translation",
-    "description": "A Translation package for Laravel  with database and cache support",
+    "name": "waavi/translation",
+    "description": "A Translation package for Laravel 5 with database and cache support",
     "keywords": [
         "waavi",
         "laravel-translator",
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "~6.0",
+        "laravel/framework": "~6.0|~7.0",
         "doctrine/dbal": "^2.5"
     },
     "require-dev": {
@@ -36,15 +36,8 @@
             "Waavi\\Translation\\Test\\": "tests"
         }
     },
-
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Waavi\\Translation\\TranslationServiceProvider"
-            ],
-            "aliases": {
-                "TranslationCache": "Waavi\\Translation\\TranslationCache"
-            }
-        }
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
