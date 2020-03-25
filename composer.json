@@ -18,7 +18,6 @@
         }
     ],
     "require": {
-        "laravel/framework": "~7.0",
         "doctrine/dbal": "^2.5"
     },
     "require-dev": {
@@ -36,6 +35,7 @@
             "Waavi\\Translation\\Test\\": "tests"
         }
     },
+    "minimum-stability": "dev",
     "scripts": {
         "test": "vendor/bin/phpunit"
     }
