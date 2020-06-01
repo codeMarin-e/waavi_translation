@@ -38,6 +38,12 @@
     },
     "minimum-stability": "dev",
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "laravel": {
+            "providers": [
+                "Waavi\\Translation\\TranslationServiceProvider"
+            ]
+        }
+    }
     }
 }
