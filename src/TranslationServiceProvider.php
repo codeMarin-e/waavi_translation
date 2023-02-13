@@ -125,7 +125,7 @@ class TranslationServiceProvider extends LaravelTranslationServiceProvider
         $defaultLocale         = $app['config']->get('app.locale');
         $languageRepository    = $app->make(LanguageRepository::class);
         $translationRepository = $app->make(TranslationRepository::class);
-        $translationsPath      = $app->basePath() . '/resources/lang';
+        $translationsPath      = $app->basePath() . '/lang';
         $command               = new FileLoaderCommand($languageRepository, $translationRepository, $app['files'], $translationsPath, $defaultLocale);
 
         $this->app['command.translator:load'] = $command;
