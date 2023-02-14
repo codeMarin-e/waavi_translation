@@ -95,6 +95,6 @@ class MixedLoader extends Loader
      */
     public function namespaces()
     {
-        return $this->hints;
+        return $this->hints ?? [];
     }
 }
